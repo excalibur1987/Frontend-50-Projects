@@ -1,0 +1,37 @@
+body {
+  height: 100%;
+}
+.cards-container {
+  height: 90vh;
+  margin: auto;
+  position: relative;
+  width: 90vw;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+div.card {
+  content: attr(data-label);
+  flex: 1;
+  height: 100%;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+div.card.focus {
+  flex: 15;
+}
+
+div.card.focus:after {
+  content: attr(data-label);
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 1rem;
+  color: white;
+  margin-left: 10px;
+  font-size: larger;
+  font-weight: bold;
+}
