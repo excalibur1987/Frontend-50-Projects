@@ -1,0 +1,16 @@
+:root{
+  --main-color: #86e42e;
+  font-size: 16px;
+}
+body {
+  height: 100%;
+}
+a.home-button{
+  margin: 1.5rem;
+}
+a.home-button button{
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
