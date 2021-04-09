@@ -1,0 +1,40 @@
+:root{
+    --main-color: #86e42e;
+}
+button{
+  cursor: pointer;
+}
+
+main.projects-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+main.projects-container .project-card{
+    border: var(--main-color) 3px solid;
+    cursor: pointer;
+}
+main.projects-container .project-card img{
+    width: 10rem;
+    height: 10rem;
+}
+main.projects-container .project-card section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.1rem;
+}
+main.projects-container .project-card section label{
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+    text-align: center;
+    font-size: large;
+    font-weight: 300;
+    word-wrap: normal;
+    cursor: pointer;
+}
