@@ -1,0 +1,62 @@
+:root {
+  --main-color: #86e42e;
+  font-size: 16px;
+}
+button {
+  cursor: pointer;
+}
+body {
+  height: 100%;
+}
+a.home-button {
+  margin: 1.5rem;
+}
+button.normal-button {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 10px;
+  min-width: 5rem;
+}
+button.normal-button:disabled{
+  background-color: #808080;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  gap: 1rem;
+}
+section.steps-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section.steps-container div.step-circle,
+section.steps-container div.bar {
+  border: #808080 3px solid;
+}
+section.steps-container div.step.done *{
+  border-color: var(--main-color);
+}
+section.steps-container div.step{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section.steps-container div.bar {
+  width: 5rem;
+  height: 0px;
+}
+section.steps-container div.step-circle {
+  border-radius: 7rem;
+  padding: 1rem;
+}
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
